@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Banking UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Wallet</h1>
+    <h2>Balance: ₹<span id="balance">0</span></h2>
+
+    <button onclick="addMoney(500)">Add ₹500</button>
+    <button onclick="addMoney(1000)">Add ₹1000</button>
+    <button onclick="addMoney(2000)">Add ₹2000</button>
+
+    <br><br>
+    <input type="number" id="withdrawAmount" placeholder="Enter amount">
+    <button onclick="withdrawMoney()">Withdraw</button>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
